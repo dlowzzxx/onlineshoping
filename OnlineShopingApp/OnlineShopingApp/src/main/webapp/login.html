@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Online Shopping</title>
+	<link rel="stylesheet" href="css/home-page-style.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+	.login-block {
+		margin: 0 auto;
+		width: 380px;
+		padding: 40px;
+		background: #fff;
+		border-radius: 5px;
+		border-top: 5px solid #0b9d8a;
+		border-right: 1px solid #0b9d8a;
+		border-left: 1px solid #0b9d8a;
+		border-bottom: 1px solid #0b9d8a;
+		margin-top: 100px;
+	}	
+	.login-block input {
+		width: 100%;
+		height: 42px;
+		box-sizing: border-box;
+		border-radius: 5px; 
+		border: 1px solid #ccc;
+		margin-bottom: 20px;
+		padding: 0 20px 0 10px;
+		outline: none;
+	}
+	
+	.login-block input:focus {
+		border: 1px solid #0b9d8a;
+	}
+	
+	.login-block button {
+		width: 100%;
+		height: 40px;
+		background: #0b9d8a;
+		box-sizing: border-box;
+		border-radius: 5px;
+		border: 1px solid #0b9d8a;
+		font-family: Montserrat;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 14px;
+		color: #fff;
+	}
+	
+	.login-block h1
+	{
+		text-align: center;
+		font-size: 24px;
+		text-transform: uppercase;
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+	
+	.login-block a
+	{
+		text-align: center;
+		font-size: 18px;
+		margin-top: 0;
+		margin-bottom: 20px;
+		text-decoration: none;
+		color: #0b9d8a;
+		margin-left: 100px;
+	}
+	
+</style>
+<body>
+	<nav>
+	   	<div class = "navigation">
+		   	<a href = "ShfaqProduktet" class="logo">LOGO - ONLINE SHOPING</a>
+		   	<ul class='menu'>
+		   		<li><a href='ShfaqProduktet'>Ballina</a></li>
+			   	<li><a href='#'>Teknologji</a></li>
+			   	<li><a href='#'>Libra</a></li>
+			   	<li><a href='#'>Aksesore</a></li>
+			   	<li><a href='#'>Veshje</a></li>
+		   	</ul>
+		   	
+		   	<div class = 'right-menu'>
+		   		<a href='login.html'><i class='bx bx-user'></i></a>
+		   		<a href='#'><i class='bx bx-shopping-bag'></i></a>
+		   	</div>
+	   	</div>
+   	</nav>
+   	
+	<form method="post" action="LoginServlet">
+		<div class = "login-block">
+			<h1>Login</h1>
+			<input type="text" placeholder = "Emri Perdoruesit" name = "emriPerdoruesit"/>
+			<input type = "password" placeholder = "Fjalekalimi" name="fjalekalimi"/>
+			<button type="submit" formaction="LoginServlet">Login</button>
+			<br/><br/>
+			<a href='regjistroPerdoruesin.html'>
+				Regjistrohu?
+			</a>
+		</div>
+	</form>
+</body>
+</html>
